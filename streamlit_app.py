@@ -10,7 +10,7 @@ import zipfile
 
 # Page title
 st.set_page_config(page_title='ML model builder', page_icon='🏗️')
-st.title('🏗️ ML model builder')
+st.title('🏗️ 추천 어플을 제공합니다.')
 
 with st.expander('About this app'):
   st.markdown('**What can this app do?**')
@@ -38,7 +38,7 @@ with st.sidebar:
     st.header('Tool Bar')
 
     st.markdown('**1. Image / Video**')
-    uploaded_file = st.file_uploader("Upload a CSV file", type=["jpg, jpeg,"])
+    uploaded_file = st.file_uploader("Upload a CSV file", type=["jpg, jpeg,png"])
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file, index_col=False)
       
