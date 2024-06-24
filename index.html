@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Recommendation Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar" class="sidebar">
+        <button id="toggleSidebar" class="sidebar-toggle">Toggle Sidebar</button>
+        <div class="menu-item"><a href="#recommendation">추천 앱</a></div>
+        <div class="menu-item"><a href="#productivity">생산성 앱</a></div>
+        <div class="menu-item"><a href="#favorites">좋아요 앱</a></div>
+    </div>
+    <div class="main-content">
+        <h1>앱 추천 웹사이트</h1>
+        
+        <div class="search-container">
+            <input id="searchInput" type="text" class="search-input" placeholder="검색할 앱 이름을 입력하세요.">
+            <button id="searchButton" class="search-button">검색</button>
+        </div>
+
+        <div class="custom-text">
+            이 웹사이트는 다양한 앱들을 소개하고 추천합니다. 아래의 섹션을 통해 원하는 카테고리의 앱을 확인해보세요.
+        </div>
+        
+        <div id="recommendation" class="tab-content">
+            <h2>추천 앱</h2>
+            <div class="app-box">
+                <img src="https://via.placeholder.com/100" alt="Spotify 이미지">
+                <div class="app-info">
+                    <div class="app-name">Spotify</div>
+                    <div class="app-description">음악 스트리밍 서비스입니다.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="productivity" class="tab-content">
+            <h2>생산성 앱</h2>
+            <div class="app-box">
+                <img src="https://via.placeholder.com/100" alt="Todoist 이미지">
+                <div class="app-info">
+                    <div class="app-name">Todoist</div>
+                    <div class="app-description">할 일 목록을 관리할 수 있는 앱입니다.</div>
+                </div>
+            </div>
+            <div class="app-box">
+                <img src="https://via.placeholder.com/100" alt="Notion 이미지">
+                <div class="app-info">
+                    <div class="app-name">Notion</div>
+                    <div class="app-description">다양한 노트 및 작업을 관리할 수 있는 앱입니다.</div>
+                </div>
+            </div>
+            <div class="app-box">
+                <img src="https://via.placeholder.com/100" alt="Zoom 이미지">
+                <div class="app-info">
+                    <div class="app-name">Zoom</div>
+                    <div class="app-description">온라인 회의 및 비디오 통화 앱입니다.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="favorites" class="tab-content">
+            <h2>좋아요 앱</h2>
+            <div class="app-box">
+                <img src="https://via.placeholder.com/100" alt="Instagram 이미지">
+                <div class="app-info">
+                    <div class="app-name">Instagram</div>
+                    <div class="app-description">사진 및 동영상을 공유할 수 있는 소셜 미디어 앱입니다.</div>
+                </div>
+            </div>
+            <div class="app-box">
+                <img src="https://via.placeholder.com/100" alt="TikTok 이미지">
+                <div class="app-info">
+                    <div class="app-name">TikTok</div>
+                    <div class="app-description">짧은 동영상을 공유할 수 있는 소셜 미디어 앱입니다.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
