@@ -38,7 +38,7 @@ with st.sidebar:
     st.header('Tool Bar')
 
     st.markdown('**1. Image / Video**')
-    uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+    uploaded_file = st.file_uploader("Upload a CSV file", type=["jpg, jpeg,"])
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file, index_col=False)
       

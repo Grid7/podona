@@ -2,4 +2,3 @@ streamlit
 pandas
 scikit-learn
 altair
-pip install streamlit pandas numpy scikit-learn altair
