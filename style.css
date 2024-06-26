@@ -1,17 +1,27 @@
+/* 기본 스타일 */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    padding-top: 80px; /* 원하는 패딩 값으로 설정 */
+    background-color: #1f1f1f;
     color: #e0e0e0;
 }
 
+/* 모든 섹션을 기본적으로 표시 */
+.tab-content {
+    display: block;
+    padding-top: 60px; /* 섹션 이름과 설명의 공간 확보 */
+}
+
+/* 버튼 스타일 */
 .btn-sidebar-toggle {
-    display: none;
+    display: none; /* 데스크탑에서는 숨김 */
     position: fixed;
     left: 10px;
     top: 10px;
-    z-index: 00;
+    z-index: 100;
     background-color: #1f1f1f;
     color: white;
     border: none;
@@ -20,13 +30,14 @@ body {
     border-radius: 5px;
 }
 
+/* 사이드바 스타일 */
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
     width: 250px;
     height: 100%;
-    background-color: #333;
+    background-color: #121212;
     color: #fff;
     transition: left 0.3s;
     overflow: auto;
@@ -38,7 +49,7 @@ body {
 }
 
 .sidebar .menu-item {
-    padding: 10px 20px;
+    padding: 10px 50px;
 }
 
 .sidebar .menu-item a {
@@ -50,26 +61,32 @@ body {
     text-decoration: underline;
 }
 
+/* 컨테이너 스타일 */
 .container {
-    margin-left: 250px;
+    margin-left: 250px; /* 사이드바 공간 확보 */
     padding: 20px;
 }
 
 .main-content {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: #1f1f1f;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* 헤더 스타일 */
 .header {
     text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f;
+    z-index: 100;
 }
 
 .main-title {
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -78,6 +95,7 @@ body {
     color: #bbbbbb;
 }
 
+/* 검색창 스타일 */
 .search-container {
     margin: 20px 0;
     text-align: center;
@@ -102,6 +120,7 @@ body {
     margin-left: 10px;
 }
 
+/* 섹션 링크 스타일 */
 .section-links {
     display: flex;
     justify-content: center;
@@ -119,24 +138,29 @@ body {
     border-bottom: 2px solid #007BFF;
 }
 
-.tab-content {
-    display: none;
+/* 섹션 이름과 설명 고정 */
+.tab-content h2,
+.tab-content p.description {
+    position: sticky;
+    top: 60px; /* 검색창과 섹션 링크 공간 확보 */
+    background-color: #1f1f1f;
+    z-index: 50;
+    padding: 10px 0;
+    margin: 0;
 }
 
-.tab-content.active {
-    display: block;
-}
-
+/* 그리드 컨테이너 스타일 */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
 }
 
+/* 추천 앱 스타일 */
 .recommended-grid .app-box {
     display: flex;
     align-items: center;
-    background-color: #2a2a2a;
+    background-color: #494949;
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -169,10 +193,10 @@ body {
     color: #bbbbbb;
 }
 
+/* 인덱스 그리드 스타일 */
 .index-grid .app-box {
-    display: Flex;
+    display: flex;
     align-items: center;
-    /* background-color: #2a2a2a; */
     border-radius: 14px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -208,10 +232,12 @@ body {
     color: #bbbbbb;
 }
 
+/* 앱 박스 호버 효과 */
 .app-box:hover {
     transform: translateY(-5px);
 }
 
+/* 더보기 버튼 스타일 */
 .btn-show-more {
     display: block;
     width: 100%;
@@ -225,24 +251,66 @@ body {
     text-align: center;
 }
 
+/* 숨김 클래스 */
 .hidden {
     display: none;
 }
 
+/* 반응형 디자인 */
 @media (max-width: 768px) {
     .sidebar {
-        left: -250px;
+        left: -250px; /* 사이드바 숨기기 */
+        transition: left 0.3s ease;
     }
 
     .sidebar.active {
-        left: 0;
+        left: 0; /* 사이드바 보이기 */
     }
 
     .btn-sidebar-toggle {
-        display: block;
+        display: block; /* 모바일에서 버튼 보이기 */
     }
 
     .container {
-        margin-left: 0;
+        margin-left: 0; /* 모바일에서 사이드바 공간 없음 */
     }
 }
+.app-box {
+    visibility: visible;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease, visibility 0.3s ease;
+    padding-top: px;  /* s예시로 충분한 패딩 값 추가 */
+    margin-top: 0%
+}
+
+.app-box.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.gradient-border {
+            position: relative;
+            padding: 20px; /* 내부 패딩 */
+            background: white; /* 배경색 */
+            z-index: 1;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -5px; left: -5px; right: -5px; bottom: -5px;
+            background: linear-gradient(to right, red, yellow);
+            z-index: -1;
+            border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
+        }
+
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            /*background: white; /* 배경색 */
+            margin: 5px;
+            z-index: 0;
+            border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
+        }
