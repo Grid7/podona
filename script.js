@@ -1,40 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const showMoreButtons = document.querySelectorAll('.show-more-button');
-    
+document.addEventListener('DOMContentLoaded', function() {
+    const sidebarToggleButton = document.querySelector('.btn-sidebar-toggle');
+    const sidebar = document.querySelector('.sidebar');
+
+    // 사이드바 토글 버튼 클릭 이벤트
+    sidebarToggleButton.addEventListener('click', function() {
+        sidebar.classList.toggle('active');
+    });
+
+    // 탭 링크 클릭 이벤트
+    const tabLinks = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const tab = this.getAttribute('data-tab');
+
+            tabLinks.forEach(link => link.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            this.classList.add('active');
+            document.getElementById(tab).classList.add('active');
+        });
+    });
+
+    // 모든 섹션을 초기 로드 시 보이도록 설정
+    tabContents.forEach(content => content.classList.add('active'));
+
+    // "더보기" 버튼 클릭 이벤트
+    const showMoreButtons = document.querySelectorAll('.btn-show-more');
+
     showMoreButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const moreApps = button.previousElementSibling;
-            if (moreApps.classList.contains('hidden')) {
-                moreApps.classList.remove('hidden');
-                button.textContent = '접기';
-            } else {
-                moreApps.classList.add('hidden');
-                button.textContent = '더보기';
-            }
+        button.addEventListener('click', function() {
+            const hiddenApps = this.parentNode.querySelectorAll('.app-box.hidden');
+            hiddenApps.forEach(app => app.classList.remove('hidden'));
+            this.style.display = 'none';
         });
-    });
-
-    const appBoxes = document.querySelectorAll('.app-box');
-    const popup = document.getElementById('app-popup');
-    const popupContent = document.getElementById('popup-app-info');
-    const closePopup = document.querySelector('.close-popup');
-    
-    appBoxes.forEach(box => {
-        box.addEventListener('click', () => {
-            const appName = box.querySelector('.app-name').textContent;
-            const appDescription = box.querySelector('.app-description').textContent;
-            popupContent.innerHTML = `<h2>${appName}</h2><p>${appDescription}</p>`;
-            popup.classList.remove('hidden');
-        });
-    });
-
-    closePopup.addEventListener('click', () => {
-        popup.classList.add('hidden');
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target == popup) {
-            popup.classList.add('hidden');
-        }
     });
 });

@@ -1,137 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Web Layout</title>
+    <title>PODONA</title>
 </head>
 <body>
+    <button class="btn-sidebar-toggle">메뉴</button>
     <div class="sidebar">
-       <br><br> <h1>PODONA</h1><br>
-        <div class="menu-item"><a href="#recommended">추천 앱</a></div>
-        <div class="menu-item"><a href="#productivity">생산성 앱</a></div>
-        <div class="menu-item"><a href="#favorites">좋아요 앱</a></div>
+        <h1>PODONA</h1>
+        <div class="menu-item"><a href="#" class="tab-link" data-tab="recommended">추천 앱</a></div>
+        <div class="menu-item"><a href="#" class="tab-link" data-tab="applications">어플리케이션</a></div>
+        <div class="menu-item"><a href="#" class="tab-link" data-tab="productivity">생산성 앱</a></div>
+        <div class="menu-item"><a href="#" class="tab-link" data-tab="favorites">좋아요 앱</a></div>
     </div>
     <div class="container">
         <div class="main-content">
-            <div class="main-content">
-                <!-- 고정된 상단 섹션 -->
-                <div class="header">
-                    <!-- 메인 창 제목 -->
-                    <br> <h1 class="main-title">앱 추천 웹사이트</h1><br>
-        
-                    <!-- 설명 텍스트 -->
-                    <div class="custom-text">
-                        이 웹사이트는 다양한 앱들을 소개하고 추천합니다. 원하는 카테고리의 앱을 확인해보세요.
-                    </div><br><br>
-        
-                    <!-- 검색창 -->
-                    <div class="search-container">
-                        <input id="searchInput" type="text" class="search-input" placeholder="검색할 앱 이름을 입력하세요.">
-                        <button id="searchButton" class="search-button">검색</button>
-                    </div><br>
-        
-                    <!-- 섹션 링크 -->
-                    <div class="section-links">
-                        <a href="#recommendation" class="section-link">추천 앱</a>
-                        <a href="#productivity" class="section-link">생산성 앱</a>
-                        <a href="#favorites" class="section-link">좋아요 앱</a>
-                    </div>
-                </div><br>
-        
-            <div class="fixed-section">
-                <div id="recommended" class="tab-content">
-                    <h2>추천 앱</h2>
-                    <p class="custom-text">최고의 앱을 추천합니다.</p><br><br>
-                    <div class="grid-container">
-                        <div class="app-box">
-                            <img src="img/2.png" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">Hidden Mark</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div>
-                        <div class="app-box">
-                            <img src="img/6.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">Hidden Code</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div>
-                        <div class="app-box">
-                            <img src="img/8.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">Deep & DIF</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div> <div class="app-box">
-                            <img src="img/3.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">BG Remover</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div>
-                        <!-- 추가 앱 박스들 -->
-                    </div>
-                   <!--<button id="showMoreRecommendedApps" class="show-more-button">더보기</button>--> 
-                </div><br><br>
-                <div id="productivity" class="tab-content">
-                    <h2>생산성 앱</h2>
-                    <p class="custom-text">최고의 앱을 추천합니다.</p><br><br><br>
-                    <div class="grid-container">
-                        <div class="app-box">
-                            <img src="img/7.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">앱 이름</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div>
-                        <div class="app-box">
-                            <img src="img/1.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">앱 이름</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div><div class="app-box">
-                            <img src="img/4.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">앱 이름</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div><div class="app-box">
-                            <img src="img/9.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">도도도</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div>
-                        <!-- 추가 앱 박스들 -->
-                    </div>
-                    <button id="showMoreProductivityApps" class="show-more-button">더보기</button>
-                </div><br><br><br>
-                <div id="favorites" class="tab-content">
-                    <h2>좋아요 앱</h2>
-                    <p class="custom-text">최고의 앱을 추천합니다.</p><br><br><br>
-                    <div class="grid-container">
-                        <div class="app-box">
-                            <img src="img/10.jpg" alt="App 이미지">
-                            <div class="app-info">
-                                <div class="app-name">앱 이름</div>
-                                <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                            </div>
-                        </div>
-                        <!-- 추가 앱 박스들 -->
-                    </div>
-                    <button id="showMoreFavoritesApps" class="show-more-button">더보기</button>
+            <div class="header">
+                <h1 class="main-title">앱 추천 웹사이트</h1>
+                <p class="description">이 웹사이트는 다양한 앱들을 소개하고 추천합니다. 원하는 카테고리의 앱을 확인해보세요.</p>
+                <div class="search-container">
+                    <input id="searchInput" type="text" class="search-input" placeholder="검색할 앱 이름을 입력하세요.">
+                    <button id="searchButton" class="search-button">검색</button>
+                </div>
+                <div class="section-links">
+                    <a href="#" class="tab-link active" data-tab="recommended">추천 앱</a>
+                    <a href="#" class="tab-link" data-tab="applications">어플리케이션</a>
+                    <a href="#" class="tab-link" data-tab="productivity">생산성 앱</a>
+                    <a href="#" class="tab-link" data-tab="favorites">좋아요 앱</a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div id="app-popup" class="app-popup hidden">
-        <div class="popup-content">
-            <span class="close-popup">&times;</span>
-            <div id="popup-app-info"></div>
+            <div class="tab-content active" id="recommended">
+                <h2>추천 앱</h2>
+                <p class="description">최고의 앱을 추천합니다.</p>
+                <div class="grid-container recommended-grid">
+                    <div class="app-box recommended-app">
+                        <div class="app-image-container">
+                            <img src="img/2.png" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Hidden Mark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box recommended-app">
+                        <div class="app-image-container">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Hidden Code</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden recommended-app">
+                        <div class="app-image-container">
+                            <img src="img/8.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Deep & DIF</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggleRecommendedApps" class="btn-show-more">더보기</button>
+            </div>
+            <div class="tab-content" id="applications">
+                <h2>어플리케이션</h2>
+                <p class="description">다양한 어플리케이션을 소개합니다.</p>
+                <div class="grid-container index-grid">
+                    <div class="app-box applications-app">
+                        <div class="app-image-container">
+                            <img src="img/4.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Deep Mark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box applications-app">
+                        <div class="app-image-container">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">ReMark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden applications-app">
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggleApplicationsApps" class="btn-show-more">더보기</button>
+            </div>
+            <div class="tab-content" id="productivity">
+                <h2>생산성 앱</h2>
+                <p class="description">업무 효율을 높이는 앱입니다.</p>
+                <div class="grid-container index-grid">
+                    <div class="app-box productivity-app">
+                        <div class="app-image-container">
+                            <img src="img/4.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Deep Mark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box productivity-app">
+                        <div class="app-image-container">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">ReMark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app">
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggleProductivityApps" class="btn-show-more">더보기</button>
+            </div>
+            <div class="tab-content" id="favorites">
+                <h2>좋아요 앱</h2>
+                <p class="description">사용자들이 좋아하는 앱입니다.</p>
+                <div class="grid-container index-grid">
+                    <div class="app-box favorites-app">
+                        <div class="app-image-container">
+                            <img src="img/3.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Poison App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box favorites-app">
+                        <div class="app-image-container">
+                            <img src="img/8.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Safe Mark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden favorites-app">
+                        <div class="app-image-container">
+                            <img src="img/10.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Protect App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggleFavoritesApps" class="btn-show-more">더보기</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
