@@ -290,27 +290,26 @@ body {
 }
 
 .gradient-border {
-            position: relative;
-            padding: 20px; /* 내부 패딩 */
-            background: white; /* 배경색 */
-            z-index: 1;
-        }
+    position: relative;
+    padding: 20px; /* 내부 패딩 */
+    z-index: 1; /* 세미콜론 추가 */
+}
 
-        .gradient-border::before {
-            content: '';
-            position: absolute;
-            top: -5px; left: -5px; right: -5px; bottom: -5px;
-            background: linear-gradient(to right, red, yellow);
-            z-index: -1;
-            border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
-        }
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    background: linear-gradient(to right, red, yellow);
+    z-index: -1;
+    border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
+}
 
-        .gradient-border::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            /*background: white; /* 배경색 */
-            margin: 5px;
-            z-index: 0;
-            border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
-        }
+.gradient-border::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: transparent; /* 배경을 투명하게 설정 */
+    margin: 5px;
+    z-index: 0;
+    border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
+}

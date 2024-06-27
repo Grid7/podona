@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // 특정 섹션의 더보기 버튼 설정
-    toggleHiddenApps("toggleRecommendedApps", "recommended", 4); // 추천 앱 섹션: 처음 4개 보이기
+    toggleHiddenApps("toggleRecommendedApps", "recommended", 2); // 추천 앱 섹션: 처음 4개 보이기
     toggleHiddenApps("toggleProductivityApps", "productivity", 3); // 생산성 앱 섹션: 처음 3개 보이기
     toggleHiddenApps("toggleFavoritesApps", "favorites", 2); // 즐겨찾기 앱 섹션: 처음 2개 보이기
 
