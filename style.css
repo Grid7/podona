@@ -341,7 +341,11 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 200;
+    display: flex; /* 유연한 박스 레이아웃 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
 }
+
 
 /* 팝업 내용 */
 .popup-content {
@@ -360,7 +364,7 @@ body {
 /* 팝업 애니메이션 */
 @keyframes popup-show {
     0% {
-        transform: scale(0.9);
+        transform: scale(2.0);
         opacity: 0;
     }
     100% {
@@ -406,7 +410,7 @@ body {
 /* 팝업 특징 목록 */
 .popup-features {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .popup-features h3 {
@@ -419,16 +423,31 @@ body {
 }
 
 .popup-features li {
-    background: rgba(255, 255, 255, 0.1);
+    background: #0707071a;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
 
+/* CSS 변수 선언 */
+:root {
+    --popup-description-font-size: 16px; /* 기본 글자 크기 */
+}
+
 /* 팝업 설명 */
 .popup-description {
     margin: 20px 0;
+    font-size: var(--popup-description-font-size);
+    text-align: left;
+
 }
+
+/* 강조 스타일 */
+.popup-description strong {
+    font-weight: bold; /* 굵게 */
+    color: #ff6347; /* 색상 변경 (예: 주황색) */
+}
+
 
 /* 팝업 버튼들 */
 .popup-buttons {
@@ -438,8 +457,8 @@ body {
 }
 
 .popup-buttons a {
-    background-color: #fda085;
-    color: #2c2c2c;
+    background-color: #414141;
+    color: #fcf7f7;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -447,5 +466,5 @@ body {
 }
 
 .popup-buttons a:hover {
-    background-color: #f6d365;
+    background-color: #636363;
 }

@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
             title: "Grid q",
             image: "img/1.jpg",
             features: ["특징 1 가나다라마바사" , "특징 2", "특징 3"],
-            description: "App 1 설명입니다.",
+            description: "<h2>App 1 설명입니다.</h2> <p>아무런 말없이 ㅇ링ㄹ밍ㄹ ㅣㅁ알 밍ㄹ ㅣㅁㄹ 밍 ㄹ미<br> dfjdkfjdl fdlf aldf<p> ",
             downloadLink: "다운로드 링크 1",
             link: "링크 연결 1"
         },
@@ -146,8 +146,8 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
             <p class="popup-description">${app.description}</p>
             <div class="popup-buttons">
-                <a href="${app.downloadLink}" class="download-link">다운로드</a>
-                <a href="${app.link}" class="link-button">링크 연결</a>
+                <a href="${app.downloadLink}" class="download-link" target="_blank">다운로드</a>
+                <a href="${app.link}" class="link-button" target="_blank">링크 연결</a>
             </div>
         `;
         popupOverlay.appendChild(popupContent);
