@@ -14,6 +14,7 @@
         <div class="menu-item"><a href="#" class="tab-link" data-tab="applications">어플리케이션</a></div>
         <div class="menu-item"><a href="#" class="tab-link" data-tab="productivity">생산성 앱</a></div>
         <div class="menu-item"><a href="#" class="tab-link" data-tab="favorites">좋아요 앱</a></div>
+        <div class="menu-item"><a href="#" class="tab-link" data-tab="themores">더 모어</a></div>
     </div>
     <div class="container">
         <div class="main-content">
@@ -29,74 +30,120 @@
                     <a href="#" class="tab-link" data-tab="applications">어플리케이션</a>
                     <a href="#" class="tab-link" data-tab="productivity">생산성 앱</a>
                     <a href="#" class="tab-link" data-tab="favorites">좋아요 앱</a>
+                    <a href="#" class="tab-link" data-tab="themores">더모어</a>
                 </div>
             </div>
             <div class="tab-content active" id="recommended">
                 <h2>추천 앱</h2>
                 <p class="description">최고의 앱을 추천합니다.</p>
                 <div class="grid-container recommended-grid">
-                    <div class="app-box recommended-app gradient-border">
+                    <div class="app-box recommended-app gradient-border" data-app-id="1">
                         <div class="app-image-container">
                             <img src="img/2.png" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Hidden Mark</div>
+                            <div class="app-name">1. Hidden Mark</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box recommended-app">
+                    <div class="app-box recommended-app" data-app-id="2">
                         <div class="app-image-container">
                             <img src="img/6.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Hidden Code</div>
+                            <div class="app-name">2. Hidden Code</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box recommended-app">
+                    <div class="app-box recommended-app" data-app-id="3">
                         <div class="app-image-container">
                             <img src="img/8.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Deep & DIF</div>
+                            <div class="app-name">3. Deep & DIF</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box recommended-app">
+                    <div class="app-box recommended-app" data-app-id="4">
                         <div class="app-image-container">
                             <img src="img/8.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Deep & DIF</div>
+                            <div class="app-name">4. Deep & DIF</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
                 </div>
+                <!--
                 <button id="toggleRecommendedApps" class="btn-show-more">더보기</button>
+            -->
             </div>            
             <div class="tab-content" id="applications">
                 <h2>어플리케이션</h2>
                 <p class="description">다양한 어플리케이션을 소개합니다.</p>
                 <div class="grid-container index-grid">
-                    <div class="app-box applications-app">
+                    <div class="app-box applications-app" data-app-id="5">
+                        <h2 class="#" alt="앱넘버">1.</h2>
                         <div class="app-image-container">
                             <img src="img/4.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Deep Mark</div>
+                            <div class="app-name">1 Deep Mark</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box applications-app">
+                    <div class="app-box applications-app" data-app-id="6">
+                        <h2 class="#" alt="앱넘버">2.</h2>
                         <div class="app-image-container">
                             <img src="img/6.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">ReMark</div>
+                            <div class="app-name">2 ReMark</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box hidden applications-app">
+                    <div class="app-box applications-app" data-app-id="6">
+                        <h2 class="#" alt="앱넘버">3.</h2>
+                        <div class="app-image-container">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">3 ReMark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box applications-app" data-app-id="6">
+                        <h2 class="#" alt="앱넘버">4.</h2>
+                        <div class="app-image-container">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">4 ReMark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden applications-app" data-app-id="7">
+                        <h2 class="#" alt="앱넘버">5.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name"> 5 New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden applications-app" data-app-id="8">
+                        <h2 class="#" alt="앱넘버">6.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">6 New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden applications-app" data-app-id="9">
+                        <h2 class="#" alt="앱넘버">7.</h2>
                         <div class="app-image-container">
                             <img src="img/9.jpg" alt="App 이미지" class="app-image">
                         </div>
@@ -105,25 +152,8 @@
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box hidden applications-app">
-                        <div class="app-image-container">
-                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
-                        </div>
-                        <div class="app-info">
-                            <div class="app-name">New Productivity App</div>
-                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                        </div>
-                    </div>
-                    <div class="app-box hidden applications-app">
-                        <div class="app-image-container">
-                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
-                        </div>
-                        <div class="app-info">
-                            <div class="app-name">New Productivity App</div>
-                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
-                        </div>
-                    </div>
-                    <div class="app-box hidden applications-app">
+                    <div class="app-box hidden applications-app" data-app-id="10">
+                        <h2 class="#" alt="앱넘버">8.</h2>
                         <div class="app-image-container">
                             <img src="img/9.jpg" alt="App 이미지" class="app-image">
                         </div>
@@ -139,7 +169,8 @@
                 <h2>생산성 앱</h2>
                 <p class="description">업무 효율을 높이는 앱입니다.</p>
                 <div class="grid-container index-grid">
-                    <div class="app-box productivity-app">
+                    <div class="app-box productivity-app" data-app-id="11">
+                        <h2 class="#" alt="앱넘버">1.</h2>
                         <div class="app-image-container">
                             <img src="img/4.jpg" alt="App 이미지" class="app-image">
                         </div>
@@ -148,7 +179,8 @@
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box productivity-app">
+                    <div class="app-box productivity-app" data-app-id="12">
+                        <h2 class="#" alt="앱넘버">2.</h2>
                         <div class="app-image-container">
                             <img src="img/6.jpg" alt="App 이미지" class="app-image">
                         </div>
@@ -157,7 +189,58 @@
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box hidden productivity-app">
+                    <div class="app-box productivity-app" data-app-id="13">
+                        <h2 class="#" alt="앱넘버">3.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box productivity-app" data-app-id="14">
+                        <h2 class="#" alt="앱넘버">4.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="15">
+                        <h2 class="#" alt="앱넘버">5.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="16">
+                        <h2 class="#" alt="앱넘버">6.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="17">
+                        <h2 class="#" alt="앱넘버">7.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="18">
+                        <h2 class="#" alt="앱넘버">8.</h2>
                         <div class="app-image-container">
                             <img src="img/9.jpg" alt="App 이미지" class="app-image">
                         </div>
@@ -170,40 +253,189 @@
                 <button id="toggleProductivityApps" class="btn-show-more">더보기</button>
             </div>
             <div class="tab-content" id="favorites">
-                <h2>좋아요 앱</h2>
-                <p class="description">사용자들이 좋아하는 앱입니다.</p>
+                <h2>조아요 앱</h2>
+                <p class="description">업무 효율을 높이는 앱입니다.</p>
                 <div class="grid-container index-grid">
-                    <div class="app-box favorites-app">
+                    <div class="app-box productivity-app" data-app-id="19">
+                        <h2 class="#" alt="앱넘버">1.</h2>
                         <div class="app-image-container">
-                            <img src="img/3.jpg" alt="App 이미지" class="app-image">
+                            <img src="img/4.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Poison App</div>
+                            <div class="app-name">Deep Mark</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box favorites-app">
+                    <div class="app-box productivity-app" data-app-id="20">
+                        <h2 class="#" alt="앱넘버">2.</h2>
                         <div class="app-image-container">
-                            <img src="img/8.jpg" alt="App 이미지" class="app-image">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Safe Mark</div>
+                            <div class="app-name">ReMark</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
-                    <div class="app-box hidden favorites-app">
+                    <div class="app-box productivity-app" data-app-id="21">
+                        <h2 class="#" alt="앱넘버">3.</h2>
                         <div class="app-image-container">
-                            <img src="img/10.jpg" alt="App 이미지" class="app-image">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
                         </div>
                         <div class="app-info">
-                            <div class="app-name">Protect App</div>
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box productivity-app" data-app-id="22">
+                        <h2 class="#" alt="앱넘버">4.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="23">
+                        <h2 class="#" alt="앱넘버">5.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="24">
+                        <h2 class="#" alt="앱넘버">6.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="25">
+                        <h2 class="#" alt="앱넘버">7.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="26">
+                        <h2 class="#" alt="앱넘버">8.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
                             <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
                         </div>
                     </div>
                 </div>
                 <button id="toggleFavoritesApps" class="btn-show-more">더보기</button>
             </div>
+            <div class="tab-content" id="themores">
+                <h2>더모어</h2>
+                <p class="description">업무 효율을 높이는 앱입니다.</p>
+                <div class="grid-container index-grid">
+                    <div class="app-box productivity-app" data-app-id="27">
+                        <h2 class="#" alt="앱넘버">1.</h2>
+                        <div class="app-image-container">
+                            <img src="img/4.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">Deep Mark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box productivity-app" data-app-id="28">
+                        <h2 class="#" alt="앱넘버">2.</h2>
+                        <div class="app-image-container">
+                            <img src="img/6.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">ReMark</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box productivity-app" data-app-id="29">
+                        <h2 class="#" alt="앱넘버">3.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box productivity-app" data-app-id="30">
+                        <h2 class="#" alt="앱넘버">4.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="31">
+                        <h2 class="#" alt="앱넘버">5.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="32">
+                        <h2 class="#" alt="앱넘버">6.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="33">
+                        <h2 class="#" alt="앱넘버">7.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                    <div class="app-box hidden productivity-app" data-app-id="34">
+                        <h2 class="#" alt="앱넘버">8.</h2>
+                        <div class="app-image-container">
+                            <img src="img/9.jpg" alt="App 이미지" class="app-image">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-name">New Productivity App</div>
+                            <div class="app-description">포렌식 워터 마크 기술을 사용하여 사용자의 컨텐츠를 안전하게 보호할 수 있습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="toggleThemoresApps" class="btn-show-more">더보기</button>
+            </div>
         </div>
+    </div>
+    </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="app-details hidden">
+        <button class="btn-close">X</button>
+        <h2 class="app-name"></h2>
+        <img src="" alt="App 이미지" class="app-image">
+        <div class="app-description"></div>
     </div>
     <script src="script.js"></script>
 </body>

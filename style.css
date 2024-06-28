@@ -190,10 +190,11 @@ body {
 
 .recommended-grid .app-description {
     font-size: 14px;
-    color: #bbbbbb;
+    color: #faf8f8;
 }
 
 /* 인덱스 그리드 스타일 */
+
 .index-grid .app-box {
     display: flex;
     align-items: center;
@@ -237,18 +238,44 @@ body {
     transform: translateY(-5px);
 }
 
+/* 일반 앱 박스 스타일*/
+
+.app-box {
+    visibility: visible;
+    height: auto;
+    overflow: hidden;
+    transition: height 0.3s ease, visibility 0.3s ease;
+    padding-top: 0px;  /* 충분한 패딩 값 추가 */
+    margin-top: 0px; /* 동일한 마진 값 추가 */
+}
+
+.app-box.hidden {
+    visibility: hidden;
+    height: 0;
+    padding-top: 0;
+    margin-top: 0; /* 동일한 마진 값 제거 */
+}
+
 /* 더보기 버튼 스타일 */
 .btn-show-more {
     display: block;
     width: 100%;
     padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #2d2d2d;
+    color: #ffffff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
     text-align: center;
+    font-size: 16px; /* 글씨 크기 설정 */
+    transition: background-color 0.3s, color 0.3s; /* 호버 시 전환 효과 */
+}
+
+/* 호버 기능 추가 */
+.btn-show-more:hover {
+    background-color: #4d4d4d; /* 호버 시 배경색 변경 */
+    color: #f1f1f1; /* 호버 시 글씨 색상 변경 */
 }
 
 /* 숨김 클래스 */
@@ -275,19 +302,6 @@ body {
         margin-left: 0; /* 모바일에서 사이드바 공간 없음 */
     }
 }
-.app-box {
-    visibility: visible;
-    height: auto;
-    overflow: hidden;
-    transition: height 0.3s ease, visibility 0.3s ease;
-    padding-top: px;  /* s예시로 충분한 패딩 값 추가 */
-    margin-top: 0%
-}
-
-.app-box.hidden {
-    visibility: hidden;
-    height: 0;
-}
 
 .gradient-border {
     position: relative;
@@ -312,4 +326,126 @@ body {
     margin: 5px;
     z-index: 0;
     border-radius: 5px; /* 선택 사항: 둥근 모서리를 원할 경우 */
+}
+
+/* pop-up */
+/* 팝업 배경 */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* 배경을 반투명하게 설정 */
+    display: none; /* 초기에는 숨김 */
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+/* 팝업 내용 */
+.popup-content {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+    animation: popup-show 0.3s ease-out;
+}
+
+/* 팝업 애니메이션 */
+@keyframes popup-show {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 닫기 버튼 */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 팝업 이미지 컨테이너 */
+.popup-image-container {
+    margin: 20px auto;
+    width: 150px; /* 컨테이너를 원형으로 만들기 위해 너비와 높이를 동일하게 설정 */
+    height: 150px; /* 컨테이너를 원형으로 만들기 위해 너비와 높이를 동일하게 설정 */
+    border-radius: 50%; /* 원형으로 만들기 위해 반지름을 50%로 설정 */
+    overflow: hidden;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    padding: 5px; /* 그라디언트 테두리 두께 */
+    display: flex; /* 컨테이너 내부 이미지의 정렬을 위한 flexbox 사용 */
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+}
+
+/* 팝업 이미지 */
+.popup-image {
+    width: 100%;
+    height: 100%; /* 이미지가 컨테이너에 맞게 조절되도록 높이 설정 */
+    border-radius: 50%; /* 이미지도 원형으로 만들기 위해 반지름을 50%로 설정 */
+    object-fit: cover; /* 이미지가 컨테이너 크기에 맞게 자르기 */
+}
+
+/* 팝업 특징 목록 */
+.popup-features {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.popup-features h3 {
+    color: #fda085;
+}
+
+.popup-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popup-features li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 팝업 설명 */
+.popup-description {
+    margin: 20px 0;
+}
+
+/* 팝업 버튼들 */
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popup-buttons a {
+    background-color: #fda085;
+    color: #2c2c2c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.popup-buttons a:hover {
+    background-color: #f6d365;
 }
