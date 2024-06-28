@@ -106,12 +106,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const appData = [
         {
             id: 1,
-            title: "Grid q",
+            title: "Upscayl",
             image: "img/1.jpg",
-            features: ["특징 1 가나다라마바사" , "특징 2", "특징 3"],
-            description: "<h2>App 1 설명입니다.</h2> <p>아무런 말없이 ㅇ링ㄹ밍ㄹ ㅣㅁ알 밍ㄹ ㅣㅁㄹ 밍 ㄹ미<br> dfjdkfjdl fdlf aldf<p> ",
-            downloadLink: "다운로드 링크 1",
-            link: "링크 연결 1"
+            features: ["Work on Linux🐧, MacOS 🍏 and Windows 🐌" , "Upscale Images 🖼", "Upscayl is a free"],
+            description: "<h2>Upscayl은 고급 AI 모델을 사용하여 저해상도 이미지를 확장할 수 있는 무료 오픈 소스 데스크톱 응용 프로그램입니다..</h2> <p>아무런 말없이 ㅇ링ㄹ밍ㄹ ㅣㅁ알 밍ㄹ ㅣㅁㄹ 밍 ㄹ미<br> dfjdkfjdl fdlf aldf<p> ",
+            downloadLink: "https://upscayl.org/#desktop",
+            link: "https://upscayl.org"
         },
         {
             id: 2,
