@@ -5,7 +5,15 @@ const appData = [
         title: "App 2",
         image: "img/2.png",
         features: ["특징 A", "특징 B", "특징 C"],
-        description: "App 2 설명입니다.",
+        description: `App 2 설명입니다. 
+                      <br><br> 
+                      <span style="font-size: 20px; color: blue;">이 부분은 더 큰 글씨로 강조된 파란색 텍스트입니다.</span>
+                      <br><br>
+                      <strong>이 부분은 굵은 텍스트입니다.</strong>
+                      <br><br>
+                      <img src="img/feature-image.png" alt="Feature Image" width="300" height="200">
+                      <br><br>
+                      추가 설명을 여기에 작성하세요.`
         downloadLink: "다운로드 링크 2",
         link: "링크 연결 2"
     },
