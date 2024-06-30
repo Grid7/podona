@@ -3,104 +3,91 @@
 const appData = [
     {
         id: 1,
-        title: "App 2",
+        title: "Remove BG",
+        image: "img/1.png",
+        features: ["1. 인공지능 모델 사용", "2. 요금 : 무료", "3. 사용이 빠르고 편리"],
+        description: `이미지 배경 없애기. 
+                      <br><br> 
+                      <!-- <span style="font-size: 20px; color: blue;">이 부분은 더 큰 글씨로 강조된 파란색 텍스트입니다.</span> -->
+                      <span style="font-size: 14px;">포토샵이나 이미지 편집 툴을 사용하지 않고 빠르게 이미지 배경을 간단히 없애기 위한 좋은 곳을 소개합니다.</span> 
+                      <br><br>
+                      <!-- <strong>이 부분은 굵은 텍스트입니다.</strong>-->
+                      <span style="font-size: 14px;">인공지능 모델을 사용하여 깔끔하게 배경을 없앨 수 있습니다. 무료이며 사용이 간편하고 속도가 빨르며, 배경 이미지를 흐리게하거나 배경을 변경도 가능하여 쉽게 이용할 수 있습니다.</span> 
+                      <br><br>
+                      <div style="text-align: center;">
+                        <img src="imgp/p1.png" alt="Feature Image" width="300" height="200">
+                      </div>
+                      <br><br>
+                      <span style="font-size: 12px;">고급 사용자가 아니면 무료로 사용 가능하고, 해상도가 큰 이미지는 유료 요금제를 사용하여야 합니다.<span>`,
+        downloadLink: "https://www.remove.bg",
+    },
+    {
+        id: 2,
+        title: "Upscayl",
         image: "img/2.png",
+        features: ["Work on Linux🐧, MacOS 🍏 and Windows 🐌" , "Upscale Images 🖼", "Upscayl is a free"],
+        description: `이미지 업스케일링 프로그램. 
+                      <br><br> 
+                      <!-- <span style="font-size: 20px; color: blue;">이 부분은 더 큰 글씨로 강조된 파란색 텍스트입니다.</span> -->
+                      <span style="font-size: 14px;">포토샵이나 이미지 편집 툴을 사용하지 않고 빠르게 이미지 엡스테일링에 좋은 프로그램을 소개합니다.</span> 
+                      <br><br>
+                       <div style="text-align: center;">
+                        <img src="imgp/p2.png" alt="Feature Image" width="300" height="200">
+                      </div>
+                      <br><br>
+                      <!-- <strong>이 부분은 굵은 텍스트입니다.</strong>-->
+                      <span style="font-size: 14px;">다운로드하여 평생 무료로 사용할 수 있는 업스케일링 프로그램입니다. 무료이며 사용이 간편하고 속도가 빨르고, 4배까지 이미지를 확대하여도 깨짐도 없이 업스케일링이 가능합니다.</span> 
+                      <br><br>
+                      <span style="font-size: 12px;">다운로드 버전으로 평생 사용할 수 있다는 장점을 갖고 있습니다.<span>`,
+        downloadLink: "https://upscayl.org/#desktop",
+    },
+    {   
+        id: 3,
+        title: "pixabay",
+        image: "img/3.png",
+        features: ["무료 저작권 다운로드", "동영상, 이미지, 벡터, gif등 다양", "음악, 음향효과 다운로드"],
+        description: `저작권 free 다운로드. 
+                    <br><br> 
+                    <!-- <span style="font-size: 20px; color: blue;">이 부분은 더 큰 글씨로 강조된 파란색 텍스트입니다.</span> -->
+                    <span style="font-size: 14px;">각종 이미지, 비디오, 벡터, gif 등 저작권이 걱정 없이 다운로드 할 수 있는곳을 소개합니다.</span> 
+                    <br><br>
+                    <!-- <strong>이 부분은 굵은 텍스트입니다.</strong>-->
+                    <span style="font-size: 14px;">품질이 좋은 영상, 이미지등 수많은 것들을 저작권 걱정없이 다운로드하여 사용할 수 있는 곳입니다.</span> 
+                    <br><br>
+                    <div style="text-align: center;">
+                        <img src="imgp/p3.png" alt="Feature Image" width="300" height="200">
+                    </div>
+                    <br><br>
+                    <span style="font-size: 12px;">저작권 걱정없이 다운로드하여 영상의 품질을 극대화 시킬 수 있습니다.<span>`,
+        downloadLink: "https://www.remove.bg",
+    },
+    {
+        id: 4,
+        title: "App 2",
+        image: "img/4.png",
         features: ["특징 A", "특징 B", "특징 C"],
-        description: `App 2 설명입니다. 
+        description: "App 2 설명입니다.",
+        downloadLink: "다운로드 링크 2",
+        link: "링크 연결 2"
+    },
+    {
+        id: 30,
+        title: "Remove BG",
+        image: "img/1.png",
+        features: ["인공지능 모델 사용", "무료", "사용이 편리"],
+        description: `이미지 배경 없애기. 
                       <br><br> 
                       <span style="font-size: 20px; color: blue;">이 부분은 더 큰 글씨로 강조된 파란색 텍스트입니다.</span>
                       <br><br>
                       <strong>이 부분은 굵은 텍스트입니다.</strong>
                       <br><br>
                       <div style="text-align: center;">
-                        <img src="imgp/p2.png" alt="Feature Image" width="300" height="200">
+                        <img src="imgp/p1.png" alt="Feature Image" width="300" height="200">
                       </div>
                       <br><br>
                       추가 설명을 여기에 작성하세요.`,
-        downloadLink: "다운로드 링크 2",
-        link: "링크 연결 2"
+       // downloadLink: "다운로드 링크 2",
+        link: "https://www.remove.bg"
     },
-    {
-        id: 2,
-        title: "Upscayl",
-        image: "img/1.jpg",
-        features: ["Work on Linux🐧, MacOS 🍏 and Windows 🐌" , "Upscale Images 🖼", "Upscayl is a free"],
-        description: "<h2>Upscayl은 고급 AI 모델을 사용하여 저해상도 이미지를 확장할 수 있는 무료 오픈 소스 데스크톱 응용 프로그램입니다..</h2> <p>아무런 말없이 ㅇ링ㄹ밍ㄹ ㅣㅁ알 밍ㄹ ㅣㅁㄹ 밍 ㄹ미<br> dfjdkfjdl fdlf aldf<p> ",
-        downloadLink: "https://upscayl.org/#desktop",
-        link: "https://upscayl.org"
-    },
-    {
-        id: 3,
-        title: "App 2",
-        image: "img/2.png",
-        features: ["특징 A", "특징 B", "특징 C"],
-        description: "App 2 설명입니다.",
-        downloadLink: "다운로드 링크 2",
-        link: "링크 연결 2"
-    },
-    {
-        id: 4,
-        title: "App 2",
-        image: "img/2.png",
-        features: ["특징 A", "특징 B", "특징 C"],
-        description: "App 2 설명입니다.",
-        downloadLink: "다운로드 링크 2",
-        link: "링크 연결 2"
-    }
 ];
 
-// 팝업 생성 함수
-function createPopup(app) {
-    const popupOverlay = document.createElement('div');
-    popupOverlay.classList.add('popup-overlay');
-    const popupContent = document.createElement('div');
-    popupContent.classList.add('popup-content');
-    popupContent.innerHTML = `
-        <button class="popup-close">&times;</button>
-        <h2 class="popup-title">${app.title}</h2>
-        <div class="popup-body">
-            <div class="popup-image-container">
-                <img src="${app.image}" alt="App 이미지" class="popup-image">
-            </div>
-            <div class="popup-features">
-                <h3>특징</h3>
-                <ul>
-                    ${app.features.map(feature => `<li>${feature}</li>`).join('')}
-                </ul>
-            </div>
-        </div>
-        <p class="popup-description">${app.description}</p>
-        <div class="popup-buttons">
-            <a href="${app.downloadLink}" class="download-link" target="_blank">다운로드</a>
-            <a href="${app.link}" class="link-button" target="_blank">링크 연결</a>
-        </div>
-    `;
-    popupOverlay.appendChild(popupContent);
-    document.body.appendChild(popupOverlay);
-
-    // 팝업 닫기
-    popupOverlay.querySelector('.popup-close').addEventListener('click', () => {
-        popupOverlay.remove();
-    });
-
-    // 팝업 외부 클릭 시 닫기
-    popupOverlay.addEventListener('click', (e) => {
-        if (e.target === popupOverlay) {
-            popupOverlay.remove();
-        }
-    });
-
-    // 팝업을 화면에 표시
-    popupOverlay.style.display = 'flex';
-}
-
-// 앱 박스 클릭 이벤트 설정
-document.querySelectorAll('.app-box').forEach(item => {
-    item.addEventListener('click', event => {
-        const appId = item.getAttribute('data-app-id');
-        const app = appData.find(app => app.id == appId);
-        if (app) {
-            createPopup(app);
-        }
-    });
-});

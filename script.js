@@ -101,5 +101,69 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     }
+// 팝업 생성 함수
+function createPopup(app) {
+    const popupOverlay = document.createElement('div');
+    popupOverlay.classList.add('popup-overlay');
+
+    // 팝업 컨텐츠 생성
+    const popupContent = document.createElement('div');
+    popupContent.classList.add('popup-content');
+    popupContent.innerHTML = `
+        <button class="popup-close">&times;</button>
+        <h2 class="popup-title">${app.title}</h2>
+        <div class="popup-body">
+            <div class="popup-image-container">
+                <img src="${app.image}" alt="App 이미지" class="popup-image">
+            </div>
+            <div class="popup-features">
+                <h3>특징</h3>
+                <ul>
+                    ${app.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+        <p class="popup-description">${app.description}</p>
+        <div class="popup-buttons">
+            <a href="${app.downloadLink}" class="download-link" target="_blank">연결하기</a>
+            <button class="link-button popup-buttons">닫기</button>
+        </div>
+    `;
+
+    // 오버레이에 팝업 컨텐츠 추가
+    popupOverlay.appendChild(popupContent);
+    document.body.appendChild(popupOverlay);
+
+    // 팝업 닫기
+    popupOverlay.querySelector('.popup-close').addEventListener('click', () => {
+        popupOverlay.remove();
+    });
+
+    // 닫기 버튼 클릭 시 팝업 닫기
+    popupOverlay.querySelector('.link-button').addEventListener('click', () => {
+        popupOverlay.remove();
+    });
+
+    // 팝업 외부 클릭 시 닫기
+    popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay) {
+            popupOverlay.remove();
+        }
+    });
+
+    // 팝업을 화면에 표시
+    popupOverlay.style.display = 'flex';
+}
+
+// 앱 박스 클릭 이벤트 설정
+document.querySelectorAll('.app-box').forEach(item => {
+    item.addEventListener('click', event => {
+        const appId = item.getAttribute('data-app-id');
+        const app = appData.find(app => app.id == appId);
+        if (app) {
+            createPopup(app);
+        }
+    });
+});
 
 });
