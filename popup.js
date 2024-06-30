@@ -1,4 +1,5 @@
 // 팝업 설정
+//<strong> 굵기 : <br> 줄바꾸기 <span style="font-size: 20px; color: blue;"> 폰트크기 및 색상 바구기
 const appData = [
     {
         id: 1,
@@ -11,7 +12,9 @@ const appData = [
                       <br><br>
                       <strong>이 부분은 굵은 텍스트입니다.</strong>
                       <br><br>
-                      <img src="img/feature-image.png" alt="Feature Image" width="300" height="200">
+                      <div style="text-align: center;">
+                        <img src="imgp/p2.png" alt="Feature Image" width="300" height="200">
+                      </div>
                       <br><br>
                       추가 설명을 여기에 작성하세요.`,
         downloadLink: "다운로드 링크 2",
