@@ -13,7 +13,7 @@ const appData = [
                       <br><br>
                       <img src="img/feature-image.png" alt="Feature Image" width="300" height="200">
                       <br><br>
-                      추가 설명을 여기에 작성하세요.`
+                      추가 설명을 여기에 작성하세요.`,
         downloadLink: "다운로드 링크 2",
         link: "링크 연결 2"
     },
