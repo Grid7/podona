@@ -165,5 +165,4 @@ document.querySelectorAll('.app-box').forEach(item => {
         }
     });
 });
-
 });
