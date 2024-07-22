@@ -43,21 +43,21 @@ const appData = [
     },
     {   
         id: 3,
-        title: "pixabay",
-        image: "img/3.png",
-        features: ["무료 저작권 다운로드", "동영상, 이미지, 벡터, gif등 다양", "음악, 음향효과 다운로드"],
-        description: `저작권 free 다운로드. 
+        title: "LivePortrait",
+        image: "img/5.png",
+        features: ["무료 Live Portrait", "다양한 에제", "이미지 애니매이션"],
+        description: `다양한 이미지와 영상으로 학습된 이미지 무료 애니매이션' . 
                     <br><br> 
-                    <span style="font-size: 14px;">각종 이미지, 비디오, 벡터, gif 등 저작권이 걱정 없이 다운로드 할 수 있는곳을 소개합니다.</span> 
+                    <span style="font-size: 14px;">각종 이미지를 학습된 모델로 애니매이션할 수 있는 web을 소개합니다.</span> 
                     <br><br>
-                    <span style="font-size: 14px;">품질이 좋은 영상, 이미지등 수많은 것들을 저작권 걱정없이 다운로드하여 사용할 수 있는 곳입니다.</span> 
+                    <span style="font-size: 14px;">인공지능 모델, 이미지를 Live Portrait하여 다양한 곳에 사용.</span> 
                     <br><br>
                     <div style="text-align: center;">
-                        <img src="imgp/p3.png" alt="Feature Image" width="300" height="200">
+                        <img src="imgp/p5.png" alt="Feature Image" width="300" height="200">
                     </div>
                     <br><br>
                     <span style="font-size: 12px;">저작권 걱정없이 다운로드하여 영상의 품질을 극대화 시킬 수 있습니다.<span>`,
-        downloadLink: "https://www.remove.bg",
+        downloadLink: "https://huggingface.co/spaces/KwaiVGI/LivePortrait",
     },
     {   
         id: 4,
@@ -78,6 +78,44 @@ const appData = [
                     <br><br>
                     <span style="font-size: 12px;">저작권 걱정없는 무료 다운로드하여 영상의 품질을 극대화 시킬 수 있습니다.<span>`,
         downloadLink: "https://motionarray.com",
+    },
+    {   
+        id: 5,
+        title: "Live Portrait",
+        image: "img/5.png",
+        features: ["100개 이상의 free video templates", "100개 이상의 free songs & SFX", "하루 10개 무료 다운로드 템플릿 제공"],
+        description: `무료 템플릿도 쓸만한게 많습니다. 처음 영상 공부하시는 분들께 추천. 
+                    <br><br> 
+                    <span style="font-size: 14px;">모션 어레이에서 무료 템플릿 받아보아요.</span> 
+                    <br><br>
+                    <span style="font-size: 14px;">품질이 좋은 영상, 이미지등 수많은 것들을 하루 10개까지 무료 다운로드하여 사용할 수 있는 곳입니다.</span> 
+                    <br><br>
+                    <div style="text-align: center;">
+                        <img src="imgp/p5.png" alt="Feature Image" width="300" height="200">
+                        <br><br>
+                        <img src="imgp/p4.png" alt="Feature Image" width="300" height="200">
+                    </div>
+                    <br><br>
+                    <span style="font-size: 12px;">저작권 걱정없는 무료 다운로드하여 영상의 품질을 극대화 시킬 수 있습니다.<span>`,
+        downloadLink: "https://huggingface.co/spaces/KwaiVGI/LivePortrait",
+    },
+    {   
+        id: 6,
+        title: "pixabay",
+        image: "img/3.png",
+        features: ["무료 저작권 다운로드", "동영상, 이미지, 벡터, gif등 다양", "음악, 음향효과 다운로드"],
+        description: `저작권 free 다운로드. 
+                    <br><br> 
+                    <span style="font-size: 14px;">각종 이미지, 비디오, 벡터, gif 등 저작권이 걱정 없이 다운로드 할 수 있는곳을 소개합니다.</span> 
+                    <br><br>
+                    <span style="font-size: 14px;">품질이 좋은 영상, 이미지등 수많은 것들을 저작권 걱정없이 다운로드하여 사용할 수 있는 곳입니다.</span> 
+                    <br><br>
+                    <div style="text-align: center;">
+                        <img src="imgp/p3.png" alt="Feature Image" width="300" height="200">
+                    </div>
+                    <br><br>
+                    <span style="font-size: 12px;">저작권 걱정없이 다운로드하여 영상의 품질을 극대화 시킬 수 있습니다.<span>`,
+        downloadLink: "https://www.remove.bg",
     },
     {
         id: 30,
